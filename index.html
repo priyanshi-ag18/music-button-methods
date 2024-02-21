@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdn for using fontawesome icons (the play button in methode 2 <i> tag) -->
+    <script src="https://kit.fontawesome.com/fa1ff06f34.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+</head>
+<body>
+    <h1>Play O Mahi Song Using Audio Tag</p></h1>
+
+    <audio controls>
+    
+        <source src="O Mahi O Mahi_320(PagalWorld.com.cm).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+<br>
+
+ <h1>Method 2-Using events in Javascript</h1>
+      <p>We can style the play button using CSS according to our needs.For e.g- We can make it smaller and remove it's background</p>
+      <!-- style attribute is for styling -->
+<p style="display: inline; margin-right: 2px;">Hello</p><button  id="" onclick="document.getElementById('player').play()"><i class="fa-solid fa-play"></i></button>
+  <audio id="player1" src="O Mahi O Mahi_320(PagalWorld.com.cm).mp3">
+  </audio>
+
+  <!-- Most Recommended -->
+
+  <h1>Method 3-Using events in Javascript The button will now be playing and pausing</h1>
+      <p>We can style the play button using CSS according to our needs.For e.g- We can make it smaller and remove it's background</p>
+      <!-- style attribute is for styling -->
+<p style="display: inline; margin-right: 2px;">Hello</p><button  id="" onclick="playpause()"><i class="fa-solid fa-play"></i></button>
+  <audio id="player" src="O Mahi O Mahi_320(PagalWorld.com.cm).mp3">
+  </audio>
+
+
+  <script>
+    var audio=document.getElementById('player');
+    function playpause(){
+      if(audio.paused)
+       audio.play();
+      else
+        audio.pause();
+    }
+  </script>
+</body>
+</html>
